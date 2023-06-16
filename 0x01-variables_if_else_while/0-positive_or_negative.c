@@ -4,6 +4,11 @@
 /*more headers go here*/
 
 /*betty style doc for function main goes here*/
+/**
+ * main - Entry point
+ *
+ * return: always 0 (success)
+ */
 int main(void)
 {
 	int n;
@@ -17,5 +22,6 @@ int main(void)
 		printf("%d is zero\n", n);
 	else
 		printf("%d is negative\n", n);
+
 	return (0);
 }
