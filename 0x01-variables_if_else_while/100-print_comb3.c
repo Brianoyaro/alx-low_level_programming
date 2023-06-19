@@ -12,7 +12,7 @@ int main(void)
 		if (a < 100)
 		{
 			putchar((a / 10) + '0');
-			putchar((a % 10) + '0');	
+			putchar((a % 10) + '0');
 			putchar(',');
 			putchar(' ');
 		}
