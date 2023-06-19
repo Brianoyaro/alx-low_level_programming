@@ -8,6 +8,7 @@ int main(void)
 	int a;
 
 	for (a = 0;a < 100;a++)
+	{
 		if (a < 100)
 		{
 			putchar((a / 10) + '0');
@@ -15,6 +16,7 @@ int main(void)
 			putchar(',');
 			putchar(' ');
 		}
-		putchar('\n');
+	}
+	putchar('\n');
 	return (0);
 }
