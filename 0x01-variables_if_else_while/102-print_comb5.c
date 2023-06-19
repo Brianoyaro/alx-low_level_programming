@@ -15,18 +15,15 @@ int main(void)
 			{
 				for (d = 0; d < 10; d++)
 				{
-					if (a != b && a != c && a != d && b != c && b != d && c != d)
-					{
-						putchar(a + '0');
-						putchar(b + '0');
-						putchar(' ');
-						putchar(c + '0');
-						putchar(d + '0');
+					putchar(a + '0');
+					putchar(b + '0');
+					putchar(' ');
+					putchar(c + '0');
+					putchar(d + '0');
 					if (a + b + c + d < 36)
 					{
 						putchar(',');
 						putchar(' ');
-					}
 					}
 				}
 			}
