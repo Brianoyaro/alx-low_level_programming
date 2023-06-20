@@ -5,17 +5,13 @@
  */
 int _islower(int c)
 {
-	int a;
 
-	if ((int islower(int c)) = 1 )
+	if (islower(c))
 	{
-		a = 1;
-		printf("%d", a);
+		printf(1);
 	}
-	else
+	else if (isupper(c))
 	{
-		a = 0;
-		printf("%d", a);
+		printf(0);
 	}
-	return (a);
 }
