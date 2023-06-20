@@ -1,6 +1,6 @@
 #include <stdio.h>
-/*void print_alphabet(void);
-void print_alphabet(void)
+void print_alphabet(void);
+/*void print_alphabet(void)
 {
         int a;
         for (a = 0; a < 26; a++)
@@ -9,4 +9,4 @@ void print_alphabet(void)
         }
         putchar('\n');
 }*/
-#include "1-alphabet.c"
+/*#include "1-alphabet.c"*/
