@@ -1,5 +1,5 @@
 #include <stdio.h>
-void print_alphabet(void);
+/*void print_alphabet(void);
 void print_alphabet(void)
 {
         int a;
@@ -8,4 +8,4 @@ void print_alphabet(void)
                 putchar('a' + a);
         }
         putchar('\n');
-}
+}*/
