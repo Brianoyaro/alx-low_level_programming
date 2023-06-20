@@ -9,3 +9,4 @@ void print_alphabet(void)
         }
         putchar('\n');
 }*/
+#include "1-alphabet.c"
