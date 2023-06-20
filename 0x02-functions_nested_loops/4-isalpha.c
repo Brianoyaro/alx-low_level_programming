@@ -2,6 +2,7 @@
 
 /**
  *_isalpha - checks for alphabet input.
+ @c - character to be checked as input
  *Return: Always 0.
  */
 int _isalpha(int c)
