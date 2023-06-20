@@ -7,8 +7,7 @@ int _islower(int c)
 {
 	int a;
 
-	int islower(int c);
-	if ((int islower(int a)) == 1 )
+	if ((int islower(int c)) = 1 )
 	{
 		a = 1;
 		printf("%d", a);
