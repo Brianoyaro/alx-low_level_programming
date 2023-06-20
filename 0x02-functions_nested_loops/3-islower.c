@@ -8,10 +8,10 @@ int _islower(int c)
 
 	if (islower(c))
 	{
-		printf(1);
+		printf('1');
 	}
 	else if (isupper(c))
 	{
-		printf(0);
+		printf('0');
 	}
 }
