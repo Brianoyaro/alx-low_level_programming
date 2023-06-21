@@ -3,7 +3,7 @@
 /**
  *_isalpha - checks for alphabet input.
  @c: character to be checked as input
- *Return: Always 0.
+ *Return 1 whaen alphabeet else returns 0;
  */
 int _isalpha(int c)
 {
