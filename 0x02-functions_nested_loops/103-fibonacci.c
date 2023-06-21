@@ -24,7 +24,7 @@ int main(void)
 		{
 			summation += b;
 		}
-		if (( b > 4000000) || (a > 4000000))
+		if ((b > 4000000) || (a > 4000000))
 		{
 			break;
 		}
