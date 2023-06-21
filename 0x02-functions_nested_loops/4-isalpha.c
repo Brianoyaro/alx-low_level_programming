@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *_isalpha - checks for alphabet input.
- @c: character to be checked as input
- *Return 1 whaen alphabeet else returns 0;
+ *_isalpha - checks for alphabet character
+ @c: character to check
+ *Return: 1 when alphabet, 0 when not alphabet.
  */
 int _isalpha(int c)
 {
