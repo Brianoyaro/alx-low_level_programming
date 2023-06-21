@@ -10,6 +10,7 @@ int main(void)
 	int b = 2;
 	int sum;
 	int i;
+
 	printf("1, ");
 	for (i = 0; i < 48; i++)
 	{
@@ -19,7 +20,7 @@ int main(void)
 		printf(", ");
 		b = sum;
 		printf("%d", b);
-                printf(", ");
+		printf(", ");
 	}
 	printf("\n");
 	return (0);
