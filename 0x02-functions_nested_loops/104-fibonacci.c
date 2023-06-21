@@ -11,16 +11,16 @@ int main(void)
 	int sum;
 	int i;
 
-	printf("1, ");
-	for (i = 0; i < 48; i++)
+	for (i = 0; i < 97; i++)
 	{
+		printf("%d", a);
 		sum = a + b;
 		a = b;
-		printf("%d", a);
-		printf(", ");
 		b = sum;
-		printf("%d", b);
-		printf(", ");
+		if (i < 97)
+		{
+			printf(", ");
+		}
 	}
 	printf("\n");
 	return (0);
