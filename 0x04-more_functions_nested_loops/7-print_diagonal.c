@@ -8,7 +8,6 @@ void print_diagonal(int n)
 	int space;
 	int draw;
 
-	}
 	if (n > 0)
 	{
 		draw = 0;
