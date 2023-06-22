@@ -5,30 +5,29 @@
  */
 void print_diagonal(int n)
 {
-	int i;
-	int j;
+	int space;
+	int draw;
 
-	if (n < 0)
-	{
-		_putchar('\n');
 	}
-	else if (n > 0)
+	if (n > 0)
 	{
-		j = 0;
-		while (j < n)
+		draw = 0;
+		while (draw < n)
 		{
 			_putchar('\\');
 			_putchar('\n');
-			i = 0;
-			while (i < n)
+			space = 0;
+			while (space < n)
 			{
 				_putchar(' ');
-				if (i == j)
+				if (space == draw)
 					break;
-				i++;
+				space++;
 			}
-			j++;
+			draw++;
 		}
 		_putchar('\n');
 	}
+	else
+		_putchar('\n');
 }
