@@ -2,9 +2,6 @@
 
 /**
  *print_number - prints integer numbers
- *@ten_counterrr: gives the value of n in terms of 10's
- *@actual_tens: actual groups of 10 excluding first digit
- *@digit_value: value of each digit per itteration
  *@n: number to be printed
  */
 
