@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *print_line -prints the character '_' n times to draw a line in terminal
+ *print_line -prints the character '_' n times to draw a lie
  *n: number of characters in line
  */
 void print_line(int n)
