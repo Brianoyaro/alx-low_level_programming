@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	long int n = 612852475143;
-	int prime_number;
+	unsigned long int n = 612852475143;
+	unsigned long int prime_number;
 
 	prime_number = 2;
 	while (prime_number <= n)
