@@ -9,9 +9,10 @@ void print_square(int size)
 {
 	if (size > 0)
 	{
-		int row = 0;
+		int row;
 		int column;
 
+		row = 0;
 		while (row < size)
 		{
 			column = 0;
