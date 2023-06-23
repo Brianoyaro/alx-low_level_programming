@@ -5,12 +5,13 @@
  *@ten_counterrr: gives the value of n in terms of 10's
  *@actual_tens: actual groups of 10 excluding first digit
  *@digit_value: value of each digit per itteration
+ *@n: number to be printed
  */
 
 void print_number(int n)
 {
 	unsigned int digit_value, actual_tens;
-	double ten_counterrr = 1;  
+	double ten_counterrr = 1;
 
 	if (n == 0)
 		_putchar(0 + '0');
@@ -22,7 +23,7 @@ void print_number(int n)
 			_putchar('-');
 		}
 
-		while (ten_counterrr <= n)  
+		while (ten_counterrr <= n)
 			ten_counterrr *= 10;
 
 		actual_tens = ten_counterrr / 10;
