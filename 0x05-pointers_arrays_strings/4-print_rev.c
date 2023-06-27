@@ -15,7 +15,7 @@ void print_rev(char *s)
 		++s;
 	}
 	/*iterate through string from last element whilst printing each *s */
-	for (j = i; j > 0; j--)
+	for (j = i - 1; j >= 0; j--)
 	{
 		_putchar(*s);
 		--s;
