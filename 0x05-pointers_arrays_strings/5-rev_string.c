@@ -1,5 +1,8 @@
 #include "main.h"
-
+/**
+ * _strlen - finds length of a string
+ * @s: string whse length is to be found
+ */
 int _strlen(char *s)
 {
 	int length = 0;
@@ -11,7 +14,10 @@ int _strlen(char *s)
 	}
 	return (length);
 }
-
+/**
+ * rev_string - reverses a string
+ * @s: string to be reversed
+ */
 void rev_string(char *s)
 {
 	/*first find the length of the string to be reversed*/
