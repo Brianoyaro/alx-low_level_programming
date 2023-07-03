@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _memcpy - copies memmory area
  * @dest: destion for copying
@@ -6,6 +7,7 @@
  * @n: bytes to copy
  * return: pointer to dest
  */
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int a;
