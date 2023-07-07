@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - prints its name followed by a new line
@@ -8,7 +8,7 @@
  * Return: always 0 (Success)
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	if (argc > 0)
 		printf("%s\n", argv[0]);
