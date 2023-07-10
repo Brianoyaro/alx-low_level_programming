@@ -1,16 +1,17 @@
 #include <stdlib.h>
 #include "main.h"
+int length_finder(char *s);
 /**
  * str_concat - concatenates two strings
  * @s1: first stirng to concatenate
  * @s2: second string to concatenate
  * Return: concatenated string else NULL on error
  */
-int length_finder(char *s);
 char *str_concat(char *s1, char *s2)
 {
 	int length1, length2, i, j;
 	char *value;
+
 	if (s1 == NULL)
 		s1[0] = '\0';
 	if (s2 == NULL)
