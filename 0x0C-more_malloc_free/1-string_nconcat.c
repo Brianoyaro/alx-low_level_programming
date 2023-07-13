@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _strlen - finds length oof a string
+ * _strlen - finds length of a string
  * @s: string to find length
  * Return: length of s
  */
@@ -17,7 +17,7 @@ int _strlen(char *s)
 	return (len);
 }
 /**
- * stringnconcat - conactenates two strings
+ * string_nconcat - conactenates two strings
  * @s1: first string to concatenate
  * @s2: second string to concatenate
  * @n: number of s2 bytes to concate to s1
