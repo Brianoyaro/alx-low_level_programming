@@ -20,6 +20,7 @@ int _strlen(char *s)
  * stringnconcat - conactenates two strings
  * @s1: first string to concatenate
  * @s2: second string to concatenate
+ * @n: number of s2 bytes to concate to s1
  * Return: pointer to concatenated string
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
