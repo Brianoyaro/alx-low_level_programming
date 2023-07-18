@@ -1,7 +1,8 @@
 #include <stdio.h>
+
 /**
  * main - prints current filename
- * Return: 0 (Success)
+ * Return: Always 0(Success)
  */
 int main(void)
 {
