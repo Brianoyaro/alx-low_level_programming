@@ -6,6 +6,9 @@
  */
 void print_dog(struct dog *d)
 {
+	/*check if *d was initialised well else return nothing*/
+	if (d == NULL)
+		return;
 	if (d->name == NULL)
 		printf("Name: (nil)\n");
 	if (d->age == 0.0 || d -> owner == NULL)
