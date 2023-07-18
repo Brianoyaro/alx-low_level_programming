@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "dog.h"
 /**
  * init_dog - initialises a variable tpe struct dog
