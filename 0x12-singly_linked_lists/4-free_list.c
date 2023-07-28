@@ -8,10 +8,13 @@ void free_list(list_t *head)
 	list_t *temp;
 	list_t *current;
 
-	for (current = head; current != NULL; current = current->next)
+	current = head;
+	while (current != NULL)
 	{
 		temp = current;
-		free(temp->str);
+		current = current->next;/*move next nefore freein*/
+		free(temp->str);/*because it was mallocated in the heap*/
 		free(temp);
 	}
+	head = NULL;
 }
