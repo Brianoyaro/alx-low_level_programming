@@ -15,7 +15,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	while (rater > 0)
 	{
 		count++;
-		rater &= (rater -1);
+		rater &= (rater - 1);
 	}
 	return (count);
 }
