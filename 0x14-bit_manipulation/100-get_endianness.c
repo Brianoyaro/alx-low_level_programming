@@ -9,7 +9,7 @@ int get_endianness(void)
 	int x = 0x76543210;
 	char *c = (char *)&x;
 
-	if (*c = 0x01)
+	if (*c == 0x01)
 		return (1);
 	else
 		return (0);
