@@ -4,7 +4,7 @@
  * main - copies content from one file to another
  * @argc: argument count
  * @argv: argument vectors
- * Return: 1 on success
+ * Return: 0 on success
  */
 int main (int argc, char **argv)
 {
