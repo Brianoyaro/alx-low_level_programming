@@ -1,4 +1,12 @@
 #include "hash_tables.h"
+/**
+ * hash_table_set - sets up a hash a hash table
+ * @ht: hash table to set up
+ * @key: key of node requiring setup
+ * @value: value of node requiring setup
+ * Return: 1 on success
+ * 0 on error
+ */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *new, *temp;
