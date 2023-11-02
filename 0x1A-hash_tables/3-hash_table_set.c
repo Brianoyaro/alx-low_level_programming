@@ -12,16 +12,16 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new->key = strdup(key);
 	new->value = strdup(value);
 	index = key_index((const unsigned char *)key, ht->size);
-	while (ht->array[index] != NULL)
+	/*while (ht->array[index] != NULL)
 	{
-		if (strcmp(ht->array[index]->key, new->key) == 0)
+		if (strcmp(ht->array[index]->key, key) == 0)
 		{
 			free(ht->array[index]->value);
-			ht->array[index]->value = new->value;
+			ht->array[index]->value = strdup(value);
 			return (1);
 		}
 		ht->array[index] = ht->array[index]->next;
-	}
+	}*/
 	temp = ht->array[index];
 	new->next = temp;
 	ht->array[index] = new;
