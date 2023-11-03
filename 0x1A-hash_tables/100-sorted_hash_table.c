@@ -93,15 +93,6 @@ void shash_sorting_fxn(shash_node_t *new_node, shash_table_t *ht)
 				}
 				temp = temp->snext;
 			}
-			/*newnode is last*/
-			/*if (temp == NULL)
-			{
-				ht->stail->next = new_node;
-				new_node->sprev = ht->stail;
-				new_node->snext = NULL;
-				ht->stail = new_node;
-				return;
-			}*/
 		}
 	}
 }
@@ -148,4 +139,34 @@ void shash_table_print_rev(const shash_table_t *ht)
 		temp = temp->sprev;
 	}
 	printf("}\n");
+}
+/**
+ * shash_table_delete - deletes a hash table
+ * @ht: hash table to delete
+ * Return: Nothing
+ */
+void shash_table_delete(shash_table_t *ht)
+{
+	unsigned long int i = 0;
+	shash_node_t *aux, *temp;
+
+	for (; i < ht->size; i++)
+	{
+		if (ht->array[i] == NULL)
+			free(ht->array[i]);
+		else
+		{
+			temp = ht->array[i];
+			while (temp)
+			{
+				aux = temp->next;
+				free(temp->key);
+				free(temp->value);
+				free(temp);
+				temp = aux;
+			}
+		}
+	}
+	free(ht->array);
+	free(ht);
 }
