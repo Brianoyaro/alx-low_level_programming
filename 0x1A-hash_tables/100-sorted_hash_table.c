@@ -170,3 +170,26 @@ void shash_table_delete(shash_table_t *ht)
 	free(ht->array);
 	free(ht);
 }
+/**
+ * shash_table_get - gets a value from a hash table
+ * @ht: hash table
+ * @key: key whose value is returned
+ * Return: value associated with key
+ */
+char *shash_table_get(const shash_table_t *ht, const char *key)
+{
+	unsigned long int index;
+	shash_node_t *temp;
+
+	index = key_index((const unsigned char *)key, ht->size);
+	temp = ht->array[index];
+	if (key == NULL || strcmp(key, "") == 0 || temp == NULL)
+		return (NULL);
+	while (temp)
+	{
+		if (strcmp(temp->key, key) == 0)
+			return temp->value;
+		temp = temp->next;
+	}
+	return (NULL);
+}
