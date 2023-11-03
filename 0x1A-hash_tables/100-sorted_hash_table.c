@@ -9,7 +9,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 	shash_table_t *sht;
 	unsigned long int i = 0;
 
-	sht = malloc(sizeof(shash_table_t *) * size);
+	sht = malloc(sizeof(shash_table_t));
 	if (!sht)
 		return (NULL);
 	sht->size = size;
@@ -79,6 +79,7 @@ void shash_sorting_fxn(shash_node_t *new_node, shash_table_t *ht)
 				{
 					new_node->snext = temp;
 					new_node->sprev = temp->sprev;
+					temp->sprev->snext = new_node;
 					temp->sprev = new_node;
 					break;
 				}
@@ -89,6 +90,7 @@ void shash_sorting_fxn(shash_node_t *new_node, shash_table_t *ht)
 			{
 				new_node->snext = NULL;
 				new_node->sprev = ht->stail;
+				ht->stail->next = new_node;
 				ht->stail = new_node;
 			}
 		}
