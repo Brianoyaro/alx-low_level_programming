@@ -60,6 +60,7 @@ void shash_sorting_fxn(shash_node_t *new_node, shash_table_t *ht)
 		new_node->sprev = NULL;
 		ht->shead = new_node;
 		ht->stail = new_node;
+		return;
 	}
 	else
 	{
@@ -69,6 +70,13 @@ void shash_sorting_fxn(shash_node_t *new_node, shash_table_t *ht)
 			new_node->sprev = ht->shead->sprev;
 			ht->shead->sprev = new_node;
 			ht->shead = new_node;
+		}
+		else if (strcmp(new_node->key, ht->stail->key) > 0)/*newnode should be stail*/
+		{
+			new_node->snext = NULL;
+			new_node->sprev = ht->stail;
+			ht->stail->snext = new_node;
+			ht->stail = new_node;
 		}
 		else
 		{
@@ -81,18 +89,19 @@ void shash_sorting_fxn(shash_node_t *new_node, shash_table_t *ht)
 					new_node->sprev = temp->sprev;
 					temp->sprev->snext = new_node;
 					temp->sprev = new_node;
-					break;
+					return;
 				}
 				temp = temp->snext;
 			}
 			/*newnode is last*/
-			if (temp == NULL)
+			/*if (temp == NULL)
 			{
-				new_node->snext = NULL;
-				new_node->sprev = ht->stail;
 				ht->stail->next = new_node;
+				new_node->sprev = ht->stail;
+				new_node->snext = NULL;
 				ht->stail = new_node;
-			}
+				return;
+			}*/
 		}
 	}
 }
